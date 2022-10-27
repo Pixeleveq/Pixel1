@@ -7,5 +7,5 @@ local Tab = Window:NewTab("Speed")
 local Section = Tab:NewSection("Speed")
 
 Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
-    game.Workspace.Gravity = 100
+    game.Workspace.Gravity = 3
 end)
