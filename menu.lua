@@ -6,7 +6,6 @@ local Tab = Window:NewTab("Speed")
 
 local Section = Tab:NewSection("Speed")
 
-
-Section:NewSlider("SliderText", "SliderInfo", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+    game.Workspace.Gravity = 100
 end)
