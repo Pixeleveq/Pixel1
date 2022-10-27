@@ -4,6 +4,4 @@ local Window = Library.CreateLib("Kolya Lox", "RJTheme3")
 
 local Tab = Window:NewTab("Speed")
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
-    print("Clicked")
-end)
+local Section = Tab:NewSection("Speed")
