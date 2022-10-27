@@ -6,6 +6,10 @@ local Tab = Window:NewTab("Speed")
 
 local Section = Tab:NewSection("Speed")
 
-Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
-    game.Workspace.Gravity = 3
+Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 500
+    else
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
+    end
 end)
