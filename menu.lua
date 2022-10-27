@@ -8,7 +8,7 @@ local Section = Tab:NewSection("Speed")
 
 Section:NewToggle("ToggleText", "ToggleInfo", function(state)
     if state then
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 500
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 3
     else
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
     end
