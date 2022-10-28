@@ -1,6 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeleveq/Pixel1/main/menu.lua"))()
-
-local Window = Library.CreateLib("PixelScript", "RJTheme8")
+local Window = Library.CreateLib("PixelScript", "RJTheme3")
 
 local Tab = Window:NewTab("Teleport")
 
